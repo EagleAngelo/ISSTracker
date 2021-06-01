@@ -5,8 +5,9 @@ A simple tracker for the International Space Station (which was not simple at al
 Refreshes given a set interval. In this case 5 seconds. Parameters can be adjusted in global variables.
 Don't go below 1 or 2 seconds though, as the ISS doesn't even refresh that often so it's a waste of API calls.
 
-If cloning be sure to replace the google maps javascript API key for yours:
-**apiKey: process.env.REACT_APP_BOOM_CHACA_LACA, -> apiKey: newApiKeyNumberHere,**
+If cloning be sure to got to App.js and replace the google maps javascript API key for yours:
+
+> **apiKey: process.env.REACT_APP_BOOM_CHACA_LACA, -> apiKey: newApiKeyNumberHere,**
 
 ---
 
