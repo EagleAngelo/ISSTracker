@@ -95,9 +95,10 @@ export class App extends Component {
 
     fetchCoordinates = async (url) => {
         try {
-            const resp = await fetch(url, {
+            /* const resp = await fetch(url, {
                 headers: { Origin: window.location.host },
-            });
+            }); */
+            const resp = await fetch(url);
             return resp.json();
         } catch (err) {
             console.log("error", err);
