@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# ISSTracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple tracker for the International Space Station (which was not simple at all to make)
 
-## Available Scripts
+Refreshes given a set interval. In this case 5 seconds. Parameters can be adjusted in global variables.
+Don't go below 1 or 2 seconds though, as the ISS doesn't even refresh that often so it's a waste of API calls.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Libraries
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# react
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+https://www.npmjs.com/package/react
 
-### `npm test`
+# google-maps-react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://www.npmjs.com/package/google-maps-react
 
-### `npm run build`
+# Material-UI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://www.npmjs.com/package/@material-ui/core
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# react-share
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://www.npmjs.com/package/react-share
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Google Maps Javascript API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://developers.google.com/maps/documentation/javascript/overview
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ISS API
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+http://open-notify.org/Open-Notify-API/ISS-Location-Now/
 
-## Learn More
+## Basic maps functionallity adapted from "How to Integrate the Google Maps API into React Applications" By Rachael Njeri
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://www.digitalocean.com/community/tutorials/how-to-integrate-the-google-maps-api-into-react-applications
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+(Fixed a couple issues with deprecated methods and integrated new funcionallity beyond the tutorial scope of course)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+MIT License
 
-### Analyzing the Bundle Size
+# Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Special thanks to ZeroToMastery Angrei Neagoie whom I've never ever directed a single word to but whose class on Udemy has helped me out so much and my friend Vero who will probably never see this but thanks for helping me get started with that class too :)
