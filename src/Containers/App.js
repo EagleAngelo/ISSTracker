@@ -11,6 +11,7 @@ export class App extends Component {
     constructor() {
         super();
         this.issApiURL = "http://api.open-notify.org/iss-now.json";
+        //this.issApiURL = "https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json";
         this.gitHubURL = "https://github.com/EagleAngelo/ISSTracker.git";
         this.refreshTimer = 5000;
         this.markerRef = React.createRef();
@@ -94,7 +95,9 @@ export class App extends Component {
 
     fetchCoordinates = async (url) => {
         try {
-            const resp = await fetch(url);
+            const resp = await fetch(url, {
+                headers: { Origin: window.location.host },
+            });
             return resp.json();
         } catch (err) {
             console.log("error", err);
